@@ -41,28 +41,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*
-Route::get('clases', function () {
-    return 'Aquí se van a visualizar todas las clases';
-});
-
-Route::get('clases/temas', function () {
-    return 'Aquí se van a visualizar todos los temas';
-});
-*/
-
 Route::get('notas', function () {
-    return 'Aquí se van a visualizar las notas';
+    return view('notas');
 });
 
-Route::get('notas/{id}/editar', function ($id) {
-    return 'Aquí podremos editar la nota: ' .$id;
-});
-
-Route::get('notas/{id}/detalle', function ($id) {
-    return 'Aquí podremos ver los detalles de la nota: ' .$id;
-});
-
-Route::get('notas/crear', function () {
-    return 'Aquí se van a crear las notas nuevas';
+Route::get('agregar', function () {
+    return view('agregar');
 });
