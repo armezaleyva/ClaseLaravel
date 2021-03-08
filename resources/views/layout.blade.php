@@ -32,7 +32,7 @@
             </nav>
         </header>
 
-        @yield('content');
+        @yield('content')
 
         <footer class="foot">
             <div class="ad">
