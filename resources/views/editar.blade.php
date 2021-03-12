@@ -1,4 +1,4 @@
-@extends('layout'); @section('content');
+@extends('layout') @section('content')
 <main class="content">
     <div class="cards">
         <div class="card card-center">
