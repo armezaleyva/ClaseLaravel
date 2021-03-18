@@ -29,4 +29,13 @@ class NotasController extends Controller
         $nota = Notas::find($id);
         return view('editar', ['nota' => $nota]);
     }
+
+    function update(Notas $notas, Request $request) {
+        $notas->update([
+            'titulo' => $request->input('title'),
+            'contenido' => $request->input('content'),
+        ]);
+
+        return redirect('/notas');
+    }
 }
