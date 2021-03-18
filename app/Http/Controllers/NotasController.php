@@ -38,4 +38,10 @@ class NotasController extends Controller
 
         return redirect('/notas');
     }
+
+    function destroy($id) {
+        $notas = Notas::find($id);
+        $notas->delete();
+        return redirect('/notas');
+    }
 }
